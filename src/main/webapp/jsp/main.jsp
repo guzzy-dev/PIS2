@@ -17,7 +17,6 @@
 
         <br/>
         <a href="/PIS2_war/registration">Register new passenger</a>
-        <a href="/manageExcursions">Distribute excursion to passengers</a>
         <br/>
         <br/>
 

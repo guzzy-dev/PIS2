@@ -24,19 +24,6 @@ public class ControllerHelper {
         commands.put("initializePassengerRegistration", new InitializePassengerRegistration(daoConfig));
         commands.put("deletePassenger", new DeletePassengerCommand(daoConfig));
         commands.put("initializeExcursionManagementCommand", new InitializeExcursionManagementCommand(daoConfig));
-//        commands.put("createGroup", new CreateGroupCommand());
-//        commands.put("userAsStudent", new JoinAsStudentCommand());
-//        commands.put("studentWithoutGroup", new GetAllStudentWithoutGroupsCommand());
-//        commands.put("addStudents", new AddStudentsToGroupCommand());
-//        commands.put("addSubmit", new AddSubmitCommand());
-//        commands.put("setGrade", new SetGradeCommand());
-//        commands.put("signOut", new SignOutCommand());
-//        commands.put("updateHomework", new UpdateHomeworkCommand());
-//        commands.put("showDataInHomeworkForm", new ShowDataInHomeworkFormCommand());
-//        commands.put("deleteStudent", new DeleteStudentCommand());
-//        commands.put("showDataInUserForm", new ShowDataInUserFormCommand());
-//        commands.put("updateUser", new UpdateUserCommand());
-//        commands.put("updateGroup", new UpdateGroupCommand());
     }
 
     public ICommand getCommand(HttpServletRequest request) {

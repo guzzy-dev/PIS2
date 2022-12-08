@@ -72,7 +72,7 @@ public class PassengerDAO implements DAO<PassengerEntity> {
 
     @Override
     public void update(PassengerEntity passenger) throws SQLException {
-        final String sql = "UPDATE passengers SET" +
+        final String sql = "UPDATE passengers SET " +
                 "first_name = ?, last_name = ?, ship_id = ?, excursions_ids = ? " +
                 "WHERE id = ?";
 
@@ -80,10 +80,11 @@ public class PassengerDAO implements DAO<PassengerEntity> {
         statement.setString(1, passenger.getFirstName());
         statement.setString(2, passenger.getLastName());
         statement.setLong(3, passenger.getShipId());
-        System.out.println(convertListToString(passenger.getExcursionsIds()));
         statement.setString(4, convertListToString(passenger.getExcursionsIds()));
         statement.setLong(5, passenger.getId());
+        System.out.println(statement);
 
+        statement.executeUpdate();
     }
 
     @Override
